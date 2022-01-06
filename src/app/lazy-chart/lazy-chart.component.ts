@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import type { ECharts, EChartsOption } from 'echarts';
+//import type { ECharts, EChartsOption } from 'echarts';
 
 @Component({
   selector: 'app-lazy-chart',
@@ -9,27 +9,23 @@ import type { ECharts, EChartsOption } from 'echarts';
 export class LazyChartComponent implements OnInit {
   isLoading = false;
 
-  chartInstance: ECharts | null = null;
+  chartInstance: any = null; //ECharts
 
-  initOpts: any;
+  initOpts: any = null;
 
-  options: EChartsOption;
-
-  constructor() {
-    this.options = null as any;
-  }
+  options: any = null; //EChartsOption;
 
   ngOnInit(): void {
-    this.init('svg');
+    this.init('canvas');
   }
 
   onChartEvent(event: any, type: string) {
-    console.log('chart event:', type, event);
+    console.log('onChartEvent', type, event);
   }
 
   onChartInit(e: any) {
     this.chartInstance = e;
-    console.log('on chart init:', e);
+    console.log('onChartInit', e);
   }
 
   init(renderer: string) {
