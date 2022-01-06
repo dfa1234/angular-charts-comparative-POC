@@ -1,0 +1,23 @@
+<h2>Lazy chart component</h2>
+
+<div class="button-groups">
+  <button (click)="isLoading = !isLoading" nz-button nzType="default">
+    Toggle Loading
+  </button>
+</div>
+<ng-container *ngIf="initOpts && options"></ng-container>
+<div
+  echarts
+  [options]="options"
+  [loading]="isLoading"
+  [initOpts]="initOpts"
+  theme="macarons"
+  class="demo-chart"
+  (chartInit)="onChartEvent($event, 'chartInit')"
+  (chartClick)="onChartEvent($event, 'chartClick')"
+  (chartDataZoom)="onChartEvent($event, 'chartDataZoom')"
+  (chartInit)="onChartInit($event)"
+></div>
+
+<button (click)="init('svg')">SVG</button>
+<button (click)="init('canvas')">CANVAS</button>
