@@ -1,5 +1,5 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { LazyEchartsComponent } from './lazy-echarts.component';
 
 describe('LazyEchartsComponent', () => {
@@ -8,9 +8,9 @@ describe('LazyEchartsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LazyEchartsComponent ]
-    })
-    .compileComponents();
+      declarations: [LazyEchartsComponent],
+      imports: [HttpClientTestingModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {

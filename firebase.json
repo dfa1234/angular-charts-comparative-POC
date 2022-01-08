@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/poc-ngx-echarts",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
