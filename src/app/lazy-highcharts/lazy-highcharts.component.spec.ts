@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LazyChartComponent } from './lazy-chart.component';
+import { LazyHighChartComponent } from './lazy-highcharts.component';
 
-describe('LazyChartComponent', () => {
-  let component: LazyChartComponent;
-  let fixture: ComponentFixture<LazyChartComponent>;
+describe('LazyHighChartComponent', () => {
+  let component: LazyHighChartComponent;
+  let fixture: ComponentFixture<LazyHighChartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LazyChartComponent ]
+      declarations: [ LazyHighChartComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LazyChartComponent);
+    fixture = TestBed.createComponent(LazyHighChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

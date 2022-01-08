@@ -9,9 +9,18 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'lazy-chart',
+    path: 'lazy-echarts',
     loadChildren: () =>
-      import('./lazy-chart/lazy-chart.module').then((m) => m.LazyChartModule),
+      import('./lazy-echarts/lazy-echarts.module').then(
+        (m) => m.LazyEchartsModule
+      ),
+  },
+  {
+    path: 'lazy-highcharts',
+    loadChildren: () =>
+      import('./lazy-highcharts/lazy-highcharts.module').then(
+        (m) => m.LazyHighChartModule
+      ),
   },
 ];
 

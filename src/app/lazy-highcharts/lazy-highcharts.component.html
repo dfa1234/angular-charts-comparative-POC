@@ -1,0 +1,19 @@
+<h2>Lazy HighCharts component</h2>
+
+<ng-container *ngIf="chartOptions">
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+    style="width: 100%; height: 400px; display: block"
+  ></highcharts-chart>
+</ng-container>
+
+Highcharts can be use to display
+<a href="https://www.highcharts.com/demo/maps/flight-routes" target="_blank"
+  >maps</a
+>. Performance can be improved using
+<a
+  href="https://www.highcharts.com/blog/tutorials/highcharts-high-performance-boost-module/"
+  target="_blank"
+  >boost</a
+>
