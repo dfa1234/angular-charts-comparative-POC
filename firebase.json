@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/poc-ngx-echarts",
+    "public": "dist/angular-charts-comparative-poc",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {

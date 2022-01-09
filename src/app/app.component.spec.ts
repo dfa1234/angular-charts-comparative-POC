@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'poc-ngx-echarts'`, () => {
+  it(`should have as title 'angular-charts-comparative-poc'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('poc-ngx-echarts');
+    expect(app.title).toEqual('angular-charts-comparative-poc');
   });
 
   it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'poc-ngx-echarts'
+      'angular-charts-comparative-poc'
     );
   });
 });
