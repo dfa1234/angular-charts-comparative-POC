@@ -1,0 +1,11 @@
+<h2>Lazy Chartjs component</h2>
+
+<div class="chart-wrapper" *ngIf="barChartData">
+  <canvas
+    baseChart
+    [data]="barChartData"
+    [options]="barChartOptions"
+    [type]="'bar'"
+  >
+  </canvas>
+</div>

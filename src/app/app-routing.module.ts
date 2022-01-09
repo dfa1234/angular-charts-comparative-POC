@@ -22,6 +22,13 @@ const routes: Routes = [
         (m) => m.LazyHighChartModule
       ),
   },
+  {
+    path: 'lazy-chartjs',
+    loadChildren: () =>
+      import('./lazy-chartjs/lazy-chartjs.module').then(
+        (m) => m.LazyChartjsModule
+      ),
+  },
 ];
 
 @NgModule({
