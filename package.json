@@ -23,7 +23,7 @@
     "echarts": "5.2.2",
     "highcharts": "9.3.2",
     "highcharts-angular": "3.0.0",
-    "ng2-charts": "^3.0.6",
+    "ng2-charts": "^3.0.7",
     "rxjs": "7.5.1",
     "tslib": "2.3.1",
     "zone.js": "0.11.4"
