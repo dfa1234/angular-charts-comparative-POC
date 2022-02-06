@@ -28,6 +28,7 @@ jobs:
         run: npm run ci:test
 
       - name: "Deploy"
-        run: |
-          npm -g install firebase-tools
-          firebase --token ${{ secrets.FIREBASE_TOKEN }} deploy --only hosting --project charts-poc
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: github-pages-build
+          folder: build
