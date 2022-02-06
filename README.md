@@ -3,7 +3,7 @@
 Performance tests on Highcharts, Echarts and Chart.js, in an angular context.
 
 ## POC Website
-https://charts-poc.web.app/
+https://dfa1234.github.io/angular-charts-comparative-POC/
 
 ## Code edition
 https://stackblitz.com/edit/angular-charts-comparative-poc
