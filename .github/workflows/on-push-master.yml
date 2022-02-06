@@ -21,14 +21,14 @@ jobs:
       - name: "Install dependencies"
         run: npm ci
 
-      - name: "Build"
+      - name: Build
         run: npm run build
 
-      - name: "Test"
+      - name: Test
         run: npm run ci:test
 
-      - name: "Deploy"
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           branch: github-pages-build
-          folder: build
+          folder: "dist/angular-charts-comparative-poc"
